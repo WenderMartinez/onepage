@@ -1,0 +1,210 @@
+html{
+    background: url('/public/fondo.jpg') no-repeat center fixed;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+nav {
+    width: 96%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    border-radius: 10px;
+    background: rgba(7, 111, 143, 0.452);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    padding-left: 8px ;
+    width: 100px;
+    height: 35px;
+    display: inline-block;
+    position: relative;
+    z-index: 50000;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+.linav{
+    content: '';
+    display: inline-block;
+    margin: 0 9px;
+    position: relative;
+    background-image: inherit;
+    background-clip: text;
+    font-family: sans-serif;
+    transform-origin: right;
+    text-transform: uppercase;
+    font-size: 100%;
+    font-style: bold;
+    color: white;
+    mix-blend-mode: difference;
+    -webkit-text-stroke: 1px white;
+}
+
+.linav::after{
+    content: '';
+    height: 10%;
+    transform-origin: right;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.linav:hover:after{
+    transform-origin: right;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(194, 187, 243);
+}
+
+.title{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    padding-inline-start: 5%;
+    padding-inline-end: 5%;
+    -webkit-text-stroke: 1px black;
+}
+
+ul{
+    display: inline;
+    text-align: center;
+}
+
+section {
+    z-index: 0;
+    border-radius: 10px;
+    position: relative;
+    margin: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: block;
+    background: rgba(255, 255, 255, 0.309);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(3px);
+}
+
+h1,h2{
+    color: white;
+    text-align: center;
+    mix-blend-mode: difference;
+    -webkit-text-stroke: 1px black;
+}
+
+footer{
+    background-color: aquamarine;
+    text-align: center;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.edificio{
+    height: 50%;
+    width: 100%;
+    border-radius: 5%;
+    z-index: 0;
+    object-fit: contain;
+
+}
+
+.card{
+    border-radius: 5%;
+    background-color: rgba(255, 255, 255, 0.227) ;
+    background-attachment: local;
+    margin-top: 1%;
+    width: 50%;
+    text-align: center;
+    overflow:hidden;
+}
+
+
+.ul{
+    list-style: none;
+    text-align: center;
+    width: 50%;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-attachment: local;
+}
+
+
+.a{
+    float: left;
+    width: 20%;
+    margin-left: 20%;
+    text-align: center;
+}
+
+.b{
+    float: right;
+    margin-right: 20%;
+}
+
+.row{
+    width: 80%;
+  height: 200px;
+  margin: auto;
+  padding: 10px;
+
+}
+
+.formulario{
+    text-align: center;
+    display: inline;
+}
+
+.icon{
+    width: 5%;
+    height: 4%;
+}
+
+.arras{
+    z-index: 50;
+    position: absolute;
+    float: left;
+    display: block;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  .content {
+    padding: 10%;
+    margin-top: 10%;
+  }
+
+  #navbar {
+    overflow: hidden;
+  }
+  
+  /* Navbar links */
+  #navbar {
+    position: fixed;
+     width: 100%;
+    top: 0;
+    z-index: 5000;
+     left: 0;
+  }
